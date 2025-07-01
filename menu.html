@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juquinha Pizzas em Pedaços</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header class="header">
+        <button class="nav-menu-toggle" onclick="toggleMenu()">Opções <span id="arrow">▼</span></button>
+        <nav id="nav">
+            <div class="nav-menu">
+                <a href="./index.html">Home</a>
+                <a href="./promo.html">Promoções</a>
+                <a href="./about.html">Sobre Nós</a>
+            </div>
+        </nav>
+        <div class="logo">
+            <img class="logo-img" src="./image/Logo_opcao1-no-bg.png" alt="Logo">
+        </div>
+        <p><b>Tel.:</b>(13) 3322-1100</p>
+    </header>
+
+    <main class="menu-container-index">
+        <div class="menu-image">
+            <img src="./image/menuPizzaBanner.jpg" alt="">
+            <p>Cardápio</p>
+        </div>
+        <section class="button-menu">
+            <button onclick="mostrarLista('tradicionais')">Tradicionais</button>
+            <button onclick="mostrarLista('especiais')">Especiais</button>
+            <button onclick="mostrarLista('doces')">Doces</button>
+            <button onclick="mostrarLista('bebidas')">Bebidas</button>
+        </section>
+        <p id="intro" class="introducao">
+            Seja bem-vindo ao nosso nobre cardápio! Escolha uma das categorias abaixo para explorar nossas pizzas e
+            bebidas dignas de um banquete real.
+        </p>
+        <div id="tradicionais" class="lista" style="display: none;">
+            <div>
+                <h2>Tradicional</h2>
+            </div>
+            <dl>
+                <dt>1. Margherita</dt>
+                <dd>Molho de tomate, mussarela, manjericão fresco e um fio de azeite de oliva extra virgem.</dd><br>
+
+                <dt>2. Calabresa</dt>
+                <dd>Molho de tomate, mussarela, linguiça calabresa fatiada, cebola em rodelas e orégano.</dd><br>
+
+                <dt>3. Portuguesa</dt>
+                <dd>Molho de tomate, mussarela, presunto, ovos cozidos fatiados, cebola, pimentão, ervilhas
+                    e azeitonas pretas.</dd><br>
+
+                <dt>4. Mussarela</dt>
+                <dd>Molho de tomate, generosa camada de mussarela e orégano.</dd><br>
+
+                <dt>5. Napolitana</dt>
+                <dd>Molho de tomate, mussarela, rodelas de tomate, alho picado, parmesão e orégano.</dd><br>
+
+                <dt>6. Quatro Queijos</dt>
+                <dd>Mussarela, provolone, gorgonzola e catupiry (ou requeijão cremoso).</dd><br>
+
+                <dt>7. Frango com Catupiry</dt>
+                <dd>Molho de tomate, frango desfiado temperado, catupiry e orégano.</dd><br>
+
+                <dt>8. Atum</dt>
+                <dd>Molho de tomate, mussarela, atum em pedaços, cebola e orégano.</dd><br>
+
+                <dt>9. Bacon</dt>
+                <dd>Molho de tomate, mussarela e generosos cubos de bacon crocante.</dd><br>
+
+                <dt>10. Palmito</dt>
+                <dd>Molho de tomate, mussarela, palmito fatiado, azeitonas e orégano.</dd><br>
+            </dl>
+        </div>
+        <div id="especiais" class="lista" style="display: none;">
+            <div>
+                <h2>Especial</h2>
+            </div>
+            <dl>
+                <dt>1. Caprese</dt>
+                <dd>Molho de tomate, mussarela de búfala, fatias de tomate, folhas de manjericão e um fio de azeite.
+                </dd>
+
+                <dt>2. Parma</dt>
+                <dd>Molho de tomate, mussarela, presunto de parma, rúcula fresca e lascas de parmesão.</dd>
+
+                <dt>3. Mexicana</dt>
+                <dd>Molho picante, mussarela, carne moída temperada, jalapeños, milho e cebola roxa.</dd>
+
+                <dt>4. Quatro Estações</dt>
+                <dd>Molho de tomate, mussarela, presunto, cogumelos, alcachofra e azeitonas pretas, separadas por
+                    quadrantes.</dd>
+
+                <dt>5. Toscana</dt>
+                <dd>Molho de tomate, mussarela, linguiça toscana, cebola roxa e ervas finas.</dd>
+
+                <dt>6. Pesto com Frango</dt>
+                <dd>Molho pesto, frango desfiado, mussarela e nozes picadas.</dd>
+
+                <dt>7. Brie com Damasco</dt>
+                <dd>Molho branco, queijo brie, geleia de damasco e toque de nozes.</dd>
+
+                <dt>8. Gorgonzola com Pera</dt>
+                <dd>Molho branco, gorgonzola, peras fatiadas e um leve fio de mel.</dd>
+
+                <dt>9. Camarão com Catupiry</dt>
+                <dd>Molho de tomate ou branco, camarões refogados, catupiry e salsinha.</dd>
+
+                <dt>10. Funghi</dt>
+                <dd>Molho branco, mussarela, cogumelos funghi secchi reidratados e alho.</dd>
+            </dl>
+        </div>
+        <div id="doces" class="lista" style="display: none;">
+            <div>
+                <h2>Doces</h2>
+            </div>
+            <dl>
+                <dt>1. Chocolate com Morango</dt>
+                <dd>Chocolate ao leite derretido e morangos frescos fatiados.</dd>
+
+                <dt>2. Banana com Canela</dt>
+                <dd>Banana fatiada, açúcar, canela e leite condensado.</dd>
+
+                <dt>3. Romeu e Julieta</dt>
+                <dd>Queijo mussarela e goiabada derretida.</dd>
+
+                <dt>4. Sensação</dt>
+                <dd>Chocolate ao leite e morango, com cobertura de leite condensado.</dd>
+
+                <dt>5. Prestígio</dt>
+                <dd>Chocolate ao leite, coco ralado e leite condensado.</dd>
+
+                <dt>6. Brigadeiro</dt>
+                <dd>Chocolate, granulado e leite condensado.</dd>
+
+                <dt>7. M&M's</dt>
+                <dd>Chocolate ao leite e confeitos coloridos de chocolate (M&M's ou similares).</dd>
+
+                <dt>8. Nutella com Morango</dt>
+                <dd>Nutella generosa e morangos frescos.</dd>
+
+                <dt>9. Maçã com Canela</dt>
+                <dd>Maçã em fatias finas, açúcar mascavo, canela e toque de noz-moscada.</dd>
+
+                <dt>10. Doce de Leite com Nozes</dt>
+                <dd>Doce de leite cremoso e nozes picadas.</dd>
+            </dl>
+        </div>
+        <div id="bebidas" class="lista" style="display: none;">
+            <div>
+                <h2>Bebidas</h2>
+            </div>
+            <dl>
+                <dt>1. Refrigerante</dt>
+                <dd>Opções variadas como cola, guaraná, laranja e limão, servidas bem geladas.</dd>
+
+                <dt>2. Suco Natural</dt>
+                <dd>Suco feito na hora com frutas frescas como laranja, abacaxi, maracujá ou morango.</dd>
+
+                <dt>3. Água Mineral</dt>
+                <dd>Com ou sem gás, perfeita para purificar o paladar entre mordidas.</dd>
+
+                <dt>4. Chá Gelado</dt>
+                <dd>Chá preto ou verde com limão, pêssego ou frutas vermelhas, servido com gelo.</dd>
+
+                <dt>5. Limonada</dt>
+                <dd>Refrescante mistura de limão espremido, água e açúcar, com ou sem hortelã.</dd>
+
+                <dt>6. Mate Gelado</dt>
+                <dd>Chá mate gelado, servido puro ou com limão, para os paladares mais brasileiros.</dd>
+
+                <dt>7. Milkshake</dt>
+                <dd>Deliciosa bebida cremosa nos sabores chocolate, morango ou baunilha.</dd>
+
+                <dt>8. Smoothie de Frutas</dt>
+                <dd>Bebida cremosa feita com frutas congeladas, iogurte e um toque de mel.</dd>
+
+                <dt>9. Água de Coco</dt>
+                <dd>Natural e refrescante, direto da nobre palmeira tropical.</dd>
+
+                <dt>10. Soda Italiana</dt>
+                <dd>Água gaseificada com essência de frutas, elegante e levemente adocicada.</dd>
+            </dl>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="./image/Logo_opcao1-no-bg.png" alt="Logo">
+            </div>
+            <div class="footer-payment">
+                <div style="align-items: start;">
+                    <div>
+                        <p><b>Formas de pagamento:</b></p>
+                    </div>
+
+                    <div class="payment-methods">
+                        <img class="mastercard-visa" src="./image/card/mastercard-visa.png" alt="Cartão de Crédito">
+                        <img class="vr-vale-refeicao" src="./image/card/vr-vale-refeicao.png" alt="VR">
+                        <img class="sodexo" src="./image/card/sodexo.png" alt="Sodexo">
+                        <img class="pix" src="./image/card/pix.png" alt="Pix">
+                    </div><br>
+                    <p><b>Endereço de retirada:</b> Rua das Flores, 123 - Centro</p>
+                </div>
+            </div>
+            <div>
+                <div style="padding-top: 2.5rem;">
+                    <p><b>Ter a Qui:</b>18:00 às 01:00</p>
+                    <p><b>Sex a Dom:</b>18:00 às 03:00</p>
+                </div>
+            </div>
+
+            <div style="padding-top: 2.5rem;">
+                <p><b>Tel.:</b>(13) 3322-1100</p><br>
+                <div style="display: flex; gap: 2px;">
+                    <img style="width: 25px;" src="./image/insta-icon.png" alt="">
+                    <a href="#" style="text-decoration: none; color: #000000;">Instagram</a>
+                </div>
+
+            </div>
+        </div>
+        <div class="terms">
+            <div></div>
+            <p>©2025 Juquinha Inc. Todos direitos reservados.</p>
+            <p>Política de Privacidade</p>
+            <p>Termos de uso</p>
+            <p>By: The Last One</p>
+        </div>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+
+</html>
