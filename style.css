@@ -133,7 +133,7 @@ body {
     }
 
     .header p {
-        font-size: 1.5rem;
+        font-size: 2.5vw;
     }
 
     .logo {
@@ -347,17 +347,17 @@ body {
         right: 10px;
     }
 
-    .box-container {
+    .home-box-container {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 50px 300px;
-        gap: 50px;
+        margin: 50px 30vw;
+        gap: 3vw;
     }
 
-    .box {
-        width: 400px;
-        height: 500px;
+    .home-box {
+        width: 50vw;
+        height: max-content;
         padding: 10px;
         border-radius: 12px;
         margin: 0;
@@ -369,29 +369,33 @@ body {
         box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
     }
 
-    .box h3 {
+    .home-box h3 {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
         position: relative;
         top: -140px;
-        font-size: 3rem;
+        margin-bottom: -3vw;
+        font-size: 4.5vw;
         color: #FFFFFF;
         font-weight: normal;
     }
 
-    .box p {
-        font-size: 1.5rem;
+    .home-box p {
+        font-size: 1.5vw;
         flex-grow: 1;
     }
 
-    .box img {
+    .home-box img {
         height: 200px;
-        width: 350px;
+        width: 25vw;
         object-fit: cover;
         border-radius: 5px;
         filter: brightness(0.5);
     }
 
     .saiba-mais {
-        margin-top: auto;
+        margin-top: 20px;
         position: relative;
         bottom: center;
         margin-bottom: 20px;
@@ -406,14 +410,14 @@ body {
     }
 
     .tel-mascot-container {
-        margin: 10rem 15rem 10rem 37rem;
+        margin: 10vh 10vw 10vh 30vw;
         display: flex;
         align-items: center;
     }
 
     .tel-mascot-container p {
         line-height: 2;
-        font-size: 2.5rem;
+        font-size: 2.5vw;
         padding: 5%;
         margin-top: 10%;
         padding-left: 25%;
@@ -429,7 +433,7 @@ body {
     }
 
     .mascot img {
-        width: 500px;
+        width: 25vw;
     }
 }
 
@@ -502,17 +506,18 @@ body {
         right: 10px;
     }
 
-    .box-container {
+    .home-box-container {
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
-        margin: 5vh 10vw;
-        gap: 50px;
+        margin: 50px 30vw;
+        gap: 3vw;
     }
 
-    .box {
-        width: 60vw;
-        height: 50vh;
+    .home-box {
+        width: 50vw;
+        height: max-content;
         padding: 10px;
         border-radius: 12px;
         margin: 0;
@@ -524,29 +529,33 @@ body {
         box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
     }
 
-    .box h3 {
+    .home-box h3 {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
         position: relative;
-        top: -110px;
-        font-size: 2.2rem;
+        top: -140px;
+        margin-bottom: -5vw;
+        font-size: 7vw;
         color: #FFFFFF;
+        font-weight: normal;
     }
 
-    .box p {
-        font-size: 1.3rem;
+    .home-box p {
+        font-size: 2.5vw;
         flex-grow: 1;
     }
 
-    .box img {
-        height: 20vh;
-        width: 50vw;
+    .home-box img {
+        height: 200px;
+        width: 45vw;
         object-fit: cover;
         border-radius: 5px;
         filter: brightness(0.5);
-        margin-top: 10px;
     }
 
     .saiba-mais {
-        margin-top: auto;
+        margin-top: 50px;
         position: relative;
         bottom: center;
         margin-bottom: 20px;
@@ -558,20 +567,21 @@ body {
         background-color: #B53616;
         padding: 10px;
         border-radius: 8px;
-        font-size: 1.2rem;
     }
 
     .tel-mascot-container {
-        margin: 5rem 0rem 5rem 10rem;
+        margin: 10vh 10vw 10vh 30vw;
         display: flex;
         align-items: center;
     }
 
     .tel-mascot-container p {
         line-height: 2;
-        padding: 1rem 5rem 1rem 8rem;
-        font-size: 1rem;
+        font-size: 2.5vw;
+        padding: 5%;
         margin-top: 10%;
+        padding-left: 25%;
+        padding-right: 15%;
         color: #FFFFFF;
         background-color: green;
         border-radius: 50px;
@@ -579,12 +589,11 @@ body {
 
     .mascot {
         position: absolute;
-        padding-left: 1%;
-        left: 12%;
+        left: 20%;
     }
 
     .mascot img {
-        width: 200px;
+        width: 25vw;
     }
 }
 
@@ -689,7 +698,92 @@ body {
 }
 
 @media (max-width: 1024px) {
-    /* Insert your styling here*/
+    .menu-image {
+        display: flex;
+    }
+
+    .menu-image img {
+        width: 100%;
+        height: 40vw;
+        object-fit: cover;
+        filter: brightness(0.5);
+    }
+
+    .menu-image p {
+        position: absolute;
+        font-size: 7vw;
+        color: #FFFFFF;
+        text-align: center;
+        top: 25%;
+        right: 0;
+        left: 0;
+    }
+
+    .button-menu {
+        margin-left: 15vw;
+        margin-right: 15vw;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .button-menu button {
+        height: auto;
+        width: 30vw;
+        padding: 10px 20px;
+        margin: 10px;
+        border: none;
+        background-color: #B53616;
+        color: white;
+        border-radius: 8px;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 2vw;
+    }
+
+    .introducao {
+        text-align: center;
+        font-size: 1rem;
+        padding: 20px 25vw;
+        margin-bottom: 20px;
+        color: #444;
+        font-style: italic;
+    }
+
+    .lista {
+        text-align: left;
+        background-image: url(./image/MenuPage.png);
+        background-size: 100% 100%;
+        height: auto;
+        width: auto;
+        right: 0;
+        margin: 5vh 15vw;
+    }
+
+    .lista h2 {
+        font-size: 7vw;
+        text-align: center;
+        padding-top: 100px;
+    }
+
+    dl {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    dl dt {
+        font-weight: bold;
+        margin-top: 15px;
+        font-size: 4vw;
+        color: #000000;
+        padding-left: 7vw;
+    }
+
+    dl dd {
+        padding: 0 100px;
+        line-height: 1;
+        font-size: 2vw;
+        color: #000000;
+    }
 }
 
 /* Para página Promoções */
@@ -769,7 +863,68 @@ body {
 }
 
 @media (max-width: 1024px) {
-    /* Insert your styling here*/
+    .promo-image {
+        display: flex;
+    }
+
+    .promo-image img {
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+        filter: brightness(0.5);
+    }
+
+    .promo-image p {
+        position: absolute;
+        font-size: 7rem;
+        color: #FFFFFF;
+        text-align: center;
+        top: 35%;
+        right: 0;
+        left: 0;
+    }
+
+    .promo-box-container {
+        border: 3px solid #000000;
+    }
+
+    .promo-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 10vh 10vw 10vh 10vw;
+        max-height: max-content;
+        border-radius: 10px;
+        padding-right: 30px;
+        padding-left: 10px;
+        background-color: #e7e5e5;
+        box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    .formatPromo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2vh 40px;
+        background-color: #e7e5e5;
+    }
+
+    .promo-box-text h2 {
+        font-size: 4vw;
+        text-align: center;
+        padding-top: 2vh;
+        padding-bottom: 1vh;
+    }
+
+    .promo-box-text p {
+        font-size: 2.5vw;
+        text-align: center;
+    }
+
+    .promo-box-image img {
+        width: 30vw;
+        border-radius: 8px;
+    }
 }
 
 /* Para página Promoções */
@@ -810,7 +965,29 @@ body {
 }
 
 @media (max-width: 1024px) {
-    /* Insert your styling here*/
+    .promo-ad-image img {
+        height: 40vh;
+        width: 100%;
+        object-fit: cover;
+        filter: brightness(0.5);
+    }
+
+    .promo-ad-container {
+        margin: 5vh 15vw;
+        padding: 50px 0;
+    }
+
+    .promo-ad-container h2 {
+        font-weight: normal;
+        font-size: 4vw;
+        padding-bottom: 100px;
+        text-align: center;
+    }
+
+    .promo-ad-container p {
+        font-size: 3vw;
+        text-align: justify;
+    }
 }
 
 /*
@@ -878,5 +1055,56 @@ body {
 }
 
 @media (max-width: 1024px) {
-    /* Insert your styling here*/
+    .about-image {
+        display: flex;
+    }
+
+    .about-image img {
+        width: 100%;
+        height: 40vh;
+        object-fit: cover;
+        filter: brightness(0.5);
+    }
+
+    .about-image p {
+        position: absolute;
+        font-size: 6vw;
+        color: #FFFFFF;
+        text-align: center;
+        top: 30%;
+        right: 0;
+        left: 0;
+    }
+
+    .little-juca {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 10vw;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .little-juca img {
+        height: 40vh;
+        width: 40vw;
+        border-radius: 8px;
+    }
+
+    .about-text {
+        display: flex;
+        flex-direction: column;
+        padding: 0 40px;
+    }
+
+    .about-text h2 {
+        text-align: center;
+        font-size: 4vw;
+        padding-bottom: 20px;
+    }
+
+    .about-text p {
+        text-align: justify;
+        font-size: 2vw;
+    }
 }
