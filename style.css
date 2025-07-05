@@ -156,9 +156,10 @@ body {
         align-items: flex-start;
         background-color: transparent;
         text-align: center;
-        padding-top: 40px;
-        border-radius: 12px;
-        margin-top: -61vh;
+        padding-top: 10px;
+        border-radius: 8px;
+        margin-top: -60vh;
+        margin-left: 20px;
         height: auto;
         width: 15vw;
         background-color: rgba(255, 255, 255, 1);
@@ -176,13 +177,13 @@ body {
 
     .nav-menu-toggle {
         height: auto;
-        width: 15vw;
+        width: 5vw;
         display: inline-block;
         border: none;
         padding: 0.8rem 0.8rem;
         font-size: 2vw;
         background-color: rgba(181, 54, 22, 0.8);
-        border-radius: 12px;
+        border-radius: 8px;
         margin-bottom: 0.5rem;
         cursor: pointer;
         transition: background-color 0.3s ease, transform 0.2s ease;
@@ -325,7 +326,7 @@ body {
 
     .carousel-button {
         position: absolute;
-        top: 40%;
+        top: 45%;
         transform: translateY(-50%);
         background-color: rgba(0, 0, 0, 0.5);
         border: none;
@@ -356,7 +357,7 @@ body {
     }
 
     .home-box {
-        width: 40vw;
+        width: fit-content;
         max-width: 50vw;
         height: 450px;
         padding: 10px;
@@ -377,20 +378,20 @@ body {
         align-items: center;
         position: relative;
         top: -140px;
-        margin-bottom: -3vw;
-        font-size: 4.5vw;
+        margin-bottom: -50px;
+        font-size: 3rem;
         color: #FFFFFF;
         font-weight: normal;
     }
 
     .home-box p {
-        font-size: 1.5vw;
+        font-size: 1.5rem;
         flex-grow: 1;
     }
 
     .home-box img {
         height: 200px;
-        width: 25vw;
+        width: 250px;
         object-fit: cover;
         border-radius: 5px;
         filter: brightness(0.5);
@@ -437,6 +438,22 @@ body {
     .mascot img {
         width: 25vw;
     }
+
+    .map {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        left: 0;
+        right: 0;
+        margin: 0;
+    }
+
+    .map iframe {
+        width: 550px;
+        height: 300px;
+        border-radius: 8px;
+        margin-bottom: 10px;
+    }
 }
 
 @media (max-width: 1024px) {
@@ -448,7 +465,7 @@ body {
         display: flex;
         width: 100%;
         max-width: 100%;
-        height: 40vw;
+        height: 250px;
         margin: 0 auto;
         overflow: hidden;
     }
@@ -457,26 +474,26 @@ body {
         display: none;
         position: relative;
         width: 100%;
-        height: 40vw;
+        height: 250px;
     }
 
     .slide img {
         width: 100%;
-        height: 40vh;
+        height: 250px;
         object-fit: cover;
         filter: brightness(0.5);
     }
 
     .carousel-link {
         position: absolute;
-        top: 50%;
+        top: 45%;
         left: 50%;
         transform: translate(-50%, -50%);
         text-decoration: none;
         color: #FFFFFF;
         padding: 1rem 0.5rem;
         border-radius: 10px;
-        font-size: 1.5rem;
+        font-size: 2rem;
         text-align: center;
     }
 
@@ -486,13 +503,18 @@ body {
 
     .carousel-button {
         position: absolute;
-        top: 28%;
+        top: 25%;
         transform: translateY(-50%);
         background-color: rgba(0, 0, 0, 0.5);
         border: none;
         padding: 10px;
         border-radius: 20%;
         cursor: pointer;
+    }
+
+    .carousel-button:hover {
+        background-color: rgba(82, 82, 82, 0.8);
+        ;
     }
 
     .carousel-button img {
@@ -518,7 +540,7 @@ body {
     }
 
     .home-box {
-        width: 50vw;
+        width: 350px;
         height: max-content;
         padding: 10px;
         border-radius: 12px;
@@ -536,21 +558,21 @@ body {
         justify-content: space-evenly;
         align-items: center;
         position: relative;
-        top: -140px;
-        margin-bottom: -5vw;
-        font-size: 7vw;
+        top: -130px;
+        margin-bottom: -40px;
+        font-size: 2.5rem;
         color: #FFFFFF;
         font-weight: normal;
     }
 
     .home-box p {
-        font-size: 2.5vw;
+        font-size: 1.5rem;
         flex-grow: 1;
     }
 
     .home-box img {
         height: 200px;
-        width: 45vw;
+        width: 320px;
         object-fit: cover;
         border-radius: 5px;
         filter: brightness(0.5);
@@ -591,12 +613,29 @@ body {
 
     .mascot {
         position: absolute;
-        left: 20%;
+        left: 15%;
     }
 
     .mascot img {
-        width: 25vw;
+        width: 30vw;
     }
+
+    .map {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        left: 0;
+        right: 0;
+        margin: 0;
+    }
+
+    .map iframe {
+        width: 500px;
+        height: 200px;
+        border-radius: 8px;
+        margin-bottom: 10px;
+    }
+
 }
 
 /* Para página Cardápio */
@@ -667,9 +706,11 @@ body {
         background-image: url(./image/MenuPage.png);
         background-size: 100% 100%;
         height: auto;
-        width: auto;
-        right: 0;
-        margin: 5vh 25vw;
+        width: 1000px;
+        margin: 5vh 23vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .lista h2 {
@@ -679,12 +720,23 @@ body {
     }
 
     dl {
+        display: flex;
+        justify-content: center;
         padding-top: 50px;
         padding-bottom: 50px;
+        height: auto;
+        max-width: 1000px;
+    }
+    .menu-sep {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        width: 500px;
     }
 
     dl dt {
         font-weight: bold;
+        margin: 0 20px;
         margin-top: 15px;
         font-size: 2vw;
         color: #000000;
@@ -692,25 +744,10 @@ body {
     }
 
     dl dd {
-        padding: 0 100px;
+        margin: 0 100px 0 100px;
         line-height: 2;
         font-size: 1vw;
         color: #000000;
-    }
-
-    .map {
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        left: 0;
-        right: 0;
-        margin: 0;
-    }
-
-    .map iframe {
-        width: 550px;
-        height: 300px;
-        border-radius: 8px;
     }
 }
 
@@ -801,21 +838,6 @@ body {
         font-size: 2vw;
         color: #000000;
     }
-
-    .map {
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        left: 0;
-        right: 0;
-        margin: 0;
-    }
-
-    .map iframe {
-        width: 500px;
-        height: 300px;
-        border-radius: 8px;
-    }
 }
 
 /* Para página Promoções */
@@ -901,7 +923,7 @@ body {
 
     .promo-image img {
         width: 100%;
-        height: 500px;
+        height: 250px;
         object-fit: cover;
         filter: brightness(0.5);
     }
@@ -998,21 +1020,21 @@ body {
 
 @media (max-width: 1024px) {
     .promo-ad-image img {
-        height: 40vh;
+        height: 250px;
         width: 100%;
         object-fit: cover;
         filter: brightness(0.5);
     }
 
     .promo-ad-container {
-        margin: 5vh 15vw;
+        margin: 10px 15vw;
         padding: 50px 0;
     }
 
     .promo-ad-container h2 {
         font-weight: normal;
-        font-size: 4vw;
-        padding-bottom: 100px;
+        font-size: 5vw;
+        padding-bottom: 50px;
         text-align: center;
     }
 
@@ -1057,14 +1079,14 @@ body {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin: 0 25vw;
-        padding-top: 100px;
-        padding-bottom: 100px;
+        margin: 0 20vw;
+        padding-top: 50px;
+        padding-bottom: 50px;
     }
 
     .little-juca img {
-        height: 40vh;
-        width: 20vw;
+        height: 550px;
+        width: 300px;
         border-radius: 8px;
     }
 
@@ -1076,13 +1098,13 @@ body {
 
     .about-text h2 {
         text-align: center;
-        font-size: 2.5vw;
+        font-size: 2.5rem;
         padding-bottom: 20px;
     }
 
     .about-text p {
         text-align: justify;
-        font-size: 1vw;
+        font-size: 1.5rem;
     }
 }
 
@@ -1093,7 +1115,7 @@ body {
 
     .about-image img {
         width: 100%;
-        height: 40vh;
+        height: 250px;
         object-fit: cover;
         filter: brightness(0.5);
     }
@@ -1103,7 +1125,7 @@ body {
         font-size: 6vw;
         color: #FFFFFF;
         text-align: center;
-        top: 30%;
+        top: 24%;
         right: 0;
         left: 0;
     }
@@ -1111,16 +1133,23 @@ body {
     .little-juca {
         display: flex;
         justify-content: space-between;
+        flex-direction: column;
+        gap: 20px;
         align-items: center;
         margin: 0 10vw;
-        padding-top: 100px;
-        padding-bottom: 100px;
+        padding-top: 25px;
+        padding-bottom: 25px;
     }
 
     .little-juca img {
-        height: 40vh;
-        width: 40vw;
+        height: 400px;
+        width: 250px;
         border-radius: 8px;
+    }
+
+    .little-juca figure {
+        order: 2;
+        font-size: 2vw;
     }
 
     .about-text {
@@ -1131,12 +1160,12 @@ body {
 
     .about-text h2 {
         text-align: center;
-        font-size: 4vw;
-        padding-bottom: 20px;
+        font-size: 4.5vw;
+        padding-bottom: 40px;
     }
 
     .about-text p {
         text-align: justify;
-        font-size: 2vw;
+        font-size: 3vw;
     }
 }
