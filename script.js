@@ -1,12 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
     const toggleButton = document.getElementById("menu-toggle");
     const nav = document.getElementById("nav");
-    const arrow = document.getElementById("arrow");
+    
 
-    if (toggleButton && nav && arrow) {
+    if (toggleButton && nav) {
         toggleButton.addEventListener("click", () => {
             const isVisible = nav.classList.toggle("show");
-            arrow.textContent = isVisible ? "▲" : "▼";
         });
     }
 });
