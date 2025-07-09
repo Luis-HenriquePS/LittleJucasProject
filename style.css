@@ -73,11 +73,11 @@ body {
 
     .footer {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
         background-color: #F8ECD1;
         text-align: center;
         color: #000000;
-        font-size: 1.5vw;
+        font-size: 1.2em;
         font-family: "Inter Tight", sans-serif;
         height: fit-content;
         padding: 1.5vh 2vw;
@@ -85,7 +85,7 @@ body {
 
     .footer-content {
         margin: 0 2vw;
-        padding-left: 5vw;
+        padding-left: 1vw;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -302,11 +302,11 @@ body {
         color: #B53616;
         z-index: 2;
         margin: 0;
-        height: 50px;
+        height: 45px;
     }
 
     .header p {
-        font-size: 0.7em;
+        font-size: 0.9em;
     }
 
     .logo {
@@ -368,7 +368,7 @@ body {
     }
 
     .nav-menu-toggle:hover {
-        background-color: #8c2a11;
+        background-color: #8C2A11;
         transform: scale(1.05);
     }
 
@@ -463,7 +463,7 @@ body {
         display: flex;
         width: 100%;
         max-width: 100%;
-        height: 30vw;
+        height: 400px;
         margin: 0 auto;
         overflow: hidden;
     }
@@ -477,7 +477,7 @@ body {
 
     .slide img {
         width: 100%;
-        height: 500px;
+        height: 400px;
         object-fit: cover;
         filter: brightness(0.5);
     }
@@ -491,7 +491,7 @@ body {
         color: #FFFFFF;
         padding: 1rem 2rem;
         border-radius: 10px;
-        font-size: 3rem;
+        font-size: 3em;
         text-align: center;
     }
 
@@ -501,7 +501,7 @@ body {
 
     .carousel-button {
         position: absolute;
-        top: 25vw;
+        top: 350px;
         transform: translateY(-50%);
         background-color: rgba(0, 0, 0, 0.5);
         border: none;
@@ -671,14 +671,14 @@ body {
 
     .carousel-link {
         position: absolute;
-        top: 45%;
+        top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         text-decoration: none;
         color: #FFFFFF;
         padding: 1rem 0.5rem;
         border-radius: 10px;
-        font-size: 2rem;
+        font-size: 2em;
         text-align: center;
     }
 
@@ -688,7 +688,7 @@ body {
 
     .carousel-button {
         position: absolute;
-        top: 25%;
+        top: 28%;
         transform: translateY(-50%);
         background-color: rgba(0, 0, 0, 0.5);
         border: none;
@@ -837,8 +837,7 @@ body {
     .carousel {
         display: flex;
         width: 100%;
-        max-width: 100%;
-        height: 250px;
+        height: 150px;
         margin: 0 auto;
         overflow: hidden;
     }
@@ -847,26 +846,26 @@ body {
         display: none;
         position: relative;
         width: 100%;
-        height: 250px;
+        height: 150px;
     }
 
     .slide img {
         width: 100%;
-        height: 250px;
+        height: 150px;
         object-fit: cover;
         filter: brightness(0.5);
     }
 
     .carousel-link {
         position: absolute;
-        top: 45%;
+        top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         text-decoration: none;
         color: #FFFFFF;
         padding: 1rem 0.5rem;
         border-radius: 10px;
-        font-size: 2rem;
+        font-size: 1.2em;
         text-align: center;
     }
 
@@ -876,7 +875,7 @@ body {
 
     .carousel-button {
         position: absolute;
-        top: 25%;
+        top: 20%;
         transform: translateY(-50%);
         background-color: rgba(0, 0, 0, 0.5);
         border: none;
@@ -887,7 +886,6 @@ body {
 
     .carousel-button:hover {
         background-color: rgba(82, 82, 82, 0.8);
-        ;
     }
 
     .carousel-button img {
@@ -1035,17 +1033,17 @@ body {
 
     .menu-image img {
         width: 100%;
-        height: 25vw;
+        height: 400px;
         object-fit: cover;
         filter: brightness(0.5);
     }
 
     .menu-image p {
         position: absolute;
-        font-size: 6vw;
+        font-size: 4em;
         color: #FFFFFF;
         text-align: center;
-        top: 20vw;
+        top: 300px;
         right: 0;
         left: 0;
     }
@@ -1059,7 +1057,7 @@ body {
 
     .button-menu button {
         height: auto;
-        width: 30vw;
+        width: 300px;
         padding: 10px 20px;
         margin: 10px;
         border: none;
@@ -1225,14 +1223,14 @@ body {
 
     .menu-image img {
         width: 100%;
-        height: 10em;
+        height: 150px;
         object-fit: cover;
         filter: brightness(0.5);
     }
 
     .menu-image p {
         position: absolute;
-        font-size: 7vw;
+        font-size: 2em;
         color: #FFFFFF;
         text-align: center;
         top: 170px;
@@ -1249,7 +1247,7 @@ body {
 
     .button-menu button {
         height: auto;
-        width: 30vw;
+        width: 20vw;
         padding: 10px 20px;
         margin: 10px;
         border: none;
@@ -1281,13 +1279,13 @@ body {
     }
 
     .lista h2 {
-        font-size: 1.7em;
+        font-size: 2em;
         text-align: center;
-        padding-top: 100px;
+        padding-top: 70px;
     }
 
     dl {
-        padding-top: 50px;
+        padding-top: 20px;
         padding-bottom: 50px;
     }
 
@@ -1302,7 +1300,7 @@ body {
     dl dd {
         padding: 0 7vw 0 10vw;
         line-height: 1;
-        font-size: 1em;
+        font-size: 0.8em;
         color: #000000;
     }
 }
@@ -1325,14 +1323,14 @@ body {
 
     .promo-image img {
         width: 100%;
-        height: 25vw;
+        height: 400px;
         object-fit: cover;
         filter: brightness(0.5);
     }
 
     .promo-image p {
         position: absolute;
-        font-size: 6vw;
+        font-size: 4em;
         color: #FFFFFF;
         text-align: center;
         top: 20vw;
@@ -1496,7 +1494,7 @@ body {
 
     .promo-image img {
         width: 100%;
-        height: 10em;
+        height: 150px;
         object-fit: cover;
         filter: brightness(0.5);
     }
@@ -1506,7 +1504,7 @@ body {
         font-size: 2em;
         color: #FFFFFF;
         text-align: center;
-        top: 20%;
+        top: 17%;
         right: 0;
         left: 0;
     }
@@ -1519,7 +1517,7 @@ body {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin: 10vh 6vw;
+        margin: 7vh 6vw;
         max-height: max-content;
         border-radius: 10px;
         padding-right: 30px;
@@ -1584,7 +1582,7 @@ body {
 @media (min-width: 1280px) {
 
     .promo-ad-image img {
-        height: 25vw;
+        height: 400px;
         width: 100%;
         object-fit: cover;
         filter: brightness(0.5);
@@ -1603,7 +1601,7 @@ body {
     }
 
     .promo-ad-container p {
-        font-size: 3rem;
+        font-size: 2rem;
         text-align: justify;
     }
 }
@@ -1660,6 +1658,212 @@ body {
     }
 }
 
+/* Para página Novidade*/
+/*
+███╗  ██╗███████╗██╗     ██╗█████████╗
+████╗ ██║██╔════╝██║ ██╗ ██║██╔══════╝
+██║██╗██║█████╗  ██║████╗██║█████████╗ 
+██║╚████║██╔══╝  ████║ ████║╚══════██║
+██║ ╚███║███████╗███╔╝  ███║█████████║
+╚═╝  ╚══╝╚══════╝╚══╝   ╚══╝╚════════╝
+*/
+
+
+@media (min-width: 1280px) {
+    .news-container {
+        margin-bottom: 30px;
+    }
+
+    .news-image img {
+        height: 400px;
+        width: 100%;
+        object-fit: cover;
+        filter: brightness(0.5);
+    }
+
+    .news-text {
+        margin: 5vh 20vw;
+        padding: 50px 0;
+    }
+
+    .news-text h2 {
+        font-weight: normal;
+        font-size: 4em;
+        padding-bottom: 100px;
+        text-align: center;
+    }
+
+    .news-text p {
+        font-size: 2em;
+        text-align: justify;
+        flex-wrap: wrap;
+    }
+
+    .restaurante {
+        text-align: center;
+        line-height: 2;
+    }
+
+    .restaurante p {
+        font-size: 1.5em;
+        padding-bottom: 30px;
+    }
+
+    .restaurante-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .restaurante-link a {
+        margin: 0 center;
+        padding: 20px 20px;
+        text-decoration: none;
+        background-color: #B53616;
+        color: #FFFFFF;
+        font-size: 1.2em;
+        border-radius: 8px;
+        bottom: 0;
+    }
+
+    .restaurante-link a:hover {
+        background-color: #8C2A11;
+    }
+
+    .restaurante-link img {
+        position: inherit;
+        width: 200px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+    .news-container {
+        margin-bottom: 30px;
+    }
+
+    .news-image img {
+        height: 250px;
+        width: 100%;
+        object-fit: cover;
+        filter: brightness(0.5);
+    }
+
+    .news-text {
+        margin: 5vh 15vw;
+        padding: 50px 0;
+    }
+
+    .news-text h2 {
+        font-weight: normal;
+        font-size: 3em;
+        padding-bottom: 100px;
+        text-align: center;
+    }
+
+    .news-text p {
+        font-size: 1.5em;
+        text-align: justify;
+        flex-wrap: wrap;
+    }
+
+    .restaurante {
+        text-align: center;
+        line-height: 2;
+    }
+
+    .restaurante p {
+        font-size: 1.2em;
+        padding-bottom: 30px;
+    }
+
+    .restaurante-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .restaurante-link a {
+        margin: 0 center;
+        padding: 10px;
+        text-decoration: none;
+        background-color: #B53616;
+        color: #FFFFFF;
+        font-size: 1em;
+        border-radius: 8px;
+        bottom: 0;
+    }
+
+    .restaurante-link img {
+        position: inherit;
+        width: 150px;
+    }
+}
+
+@media (max-width: 767px) {
+    .news-container {
+        margin-bottom: 30px;
+    }
+
+    .news-image img {
+        height: 150px;
+        width: 100%;
+        object-fit: cover;
+        filter: brightness(0.5);
+    }
+
+    .news-text {
+        margin: 5vh 15vw;
+        padding: 50px 0;
+    }
+
+    .news-text h2 {
+        font-weight: normal;
+        font-size: 2em;
+        padding-bottom: 100px;
+        text-align: center;
+    }
+
+    .news-text p {
+        font-size: 1.2em;
+        text-align: justify;
+        flex-wrap: wrap;
+    }
+
+    .restaurante {
+        text-align: center;
+        line-height: 2;
+        margin: 5vh 15vw;
+    }
+
+    .restaurante p {
+        font-size: 1.2em;
+        padding-bottom: 30px;
+    }
+
+    .restaurante-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .restaurante-link a {
+        margin: 0 center;
+        padding: 10px;
+        text-decoration: none;
+        background-color: #B53616;
+        color: #FFFFFF;
+        font-size: 1em;
+        border-radius: 8px;
+        bottom: 0;
+    }
+
+    .restaurante-link img {
+        position: inherit;
+        width: 150px;
+    }
+}
+
+/* Para página Sobre Nós*/
 /*
   █████╗ ██████╗  ██████╗ ██╗   ██╗████████╗
  ██╔══██╗██╔══██╗██╔═══██╗██║   ██║╚══██╔══╝
@@ -1676,17 +1880,17 @@ body {
 
     .about-image img {
         width: 100%;
-        height: 500px;
+        height: 400px;
         object-fit: cover;
         filter: brightness(0.5);
     }
 
     .about-image p {
         position: absolute;
-        font-size: 6vw;
+        font-size: 4em;
         color: #FFFFFF;
         text-align: center;
-        top: 35%;
+        top: 33%;
         right: 0;
         left: 0;
     }
